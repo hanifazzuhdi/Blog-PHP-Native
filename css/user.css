@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+/* navbar */
+header {
+    display: inline;
+}
+
+.jumbotron {
+    padding: 80px;
+    background-color: #B0BEC5;
+    /* background-image: url('img/bg2.png'); */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -110px;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    color: black;
+    padding-bottom: 20px;
+}
+
+.jumbotron p {
+    color: black;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #455A64;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    height: 50px;
+    color: white;
+}
+
+nav h3 a {
+    margin-left: 40px;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+nav li a {
+    color: white;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    color: black;
+}
+
+nav li:last-child {
+    margin-right: 40px;
+}
+
+/* content */
+
+main {
+    display: grid;
+    grid-template-columns: 75% auto;
+    margin-top: 10px;
+    padding: 30px 10px;
+}
+
+.content:nth-child(1) {
+    position: relative;
+    padding: 40px 0 80px;
+    box-shadow: -1px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.content .pembuka {
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.content .pembuka h1 {
+    text-align: center;
+    margin: 20px 0 35px;
+}
+
+.content .pembuka p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* CONTENT 1 (SISI KIRI) */
+.content .artikel {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.content .card {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 250px;
+    height: 310px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.content .card:hover {
+    background-color: #EEEEEE;
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+}
+
+.content .card .gambar {
+    border-bottom: 2px solid black;
+}
+
+.content .card h3 {
+    margin-top: 5px;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.content .card p {
+    margin-top: 2px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/* CONTENT 2 (SIDE PAGE) */
+
+.content:nth-child(2) {
+    position: relative;
+    padding: 80px 20px;
+    background-color: #fff;
+    box-shadow: -1px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.kanan form input {
+    padding: 5px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.kanan form button {
+    width: 60px;
+    height: 30px;
+    background-color: #2196F3;
+    border-radius: 4px;
+    border: 1px solid #2196F3;
+    cursor: pointer;
+}
+
+.kanan form button:hover {
+    background-color: lightblue;
+}
+
+.kanan h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.kanan ul li {
+    /* background-color: #E3F2FD; */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    padding: 3px;
+}
+
+footer {
+    background-color: #455A64;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-size: 15px;
+}
+
+footer span {
+    color: salmon;
+}
